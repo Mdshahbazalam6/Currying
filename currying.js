@@ -48,6 +48,3 @@ const delivery = ( Country,city ) => ( amount ) => (`Order of ${amount} rs will 
 let pipe = ( ...fns ) => (x) => fns.reduce((v,f)=>f(v),x)
 
 console.log(pipe(pluck('price'),findTotal,discount(25),findTax(5),delivery("India","Chennai"))(shoppingItems))
-
-
-// C:\f22\Auth\assignment\currying.js
